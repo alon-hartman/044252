@@ -18,14 +18,16 @@ module fas_test;
     );
 
     initial begin
-        a=1;
+        a=0;
         b=0;
-        cin=1;
+        cin=0;
         a_ns=0;
 
         #50
-        a_ns=1;
-
+        b=1;
+        
+        #50
+        b=1;
     end
 
 // End of your code
